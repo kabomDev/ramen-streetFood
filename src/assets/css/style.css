@@ -1,0 +1,333 @@
+/*=========================================*/
+/*===============GENERAL==========================*/
+/*=========================================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(29, 29, 29);
+}
+
+h1,h2,h3{
+    font-family: 'Lobster', cursive;
+}
+
+.sectionBx{
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 2em;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 100px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    width: 50px;
+    height: 50px;
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(36, 36, 36); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+#menu a{
+    display: inline-block;
+    padding: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#menu a:hover{
+    color: crimson;
+}
+
+#logo{
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+hr{
+    margin: 2em;
+    border: none;
+    border-bottom: dotted 3px crimson;
+}
+
+
+/*=========================================*/
+/*==============ACCUEIL===========================*/
+/*=========================================*/
+
+#accueil{
+    background: url('../images/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headTitle{
+    margin-top: 350px;
+    transform: translateY(-50%);
+}
+
+#accueil h1{
+    font-size: 6em;
+    color: #fff;
+}
+
+#accueil h1 span{
+    color: crimson;
+}
+
+#accueil h2{
+    font-size: 2.0em;
+    color: #fff;
+}
+
+.btn-menu{
+    width: 150px;
+    padding: 1em;
+    background-color: crimson;
+    margin-top: 50px;
+    border: none;
+    text-align: center;
+}
+
+.btn-menu a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-menu:hover{
+    background-color: rgb(253, 54, 94);
+}
+
+
+/*=========================================*/
+/*==============A PROPOS===========================*/
+/*=========================================*/
+
+#a_propos{
+    background: rgb(247, 247, 247);
+    display: flex;
+}
+
+#a_propos h2{
+    font-size: 3em;
+    color: rgb(29, 29, 29);
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+#a_propos h2 span{
+    color: crimson;
+}
+
+#a_propos p{
+    color: rgb(29, 29, 29);
+    word-spacing: 1px;
+}
+
+.imgBx{
+    width: 50%;
+    background: url('../images/a-propos.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textBx{
+    width: 50%;
+    margin-top: 100px;
+    padding: 2em;
+    text-align: justify;
+}
+
+/*=========================================*/
+/*==============SERVICES===========================*/
+/*=========================================*/
+
+#services{
+    background: rgb(255, 242, 218);
+    padding: 2em;
+}
+
+#services hr{
+    margin: 0;
+    border-bottom: dotted 1px rgb(185, 185, 185);
+}
+
+#services h2{
+    padding: 1em;
+    font-size: 3em;
+    text-align: center;
+    color: crimson;
+}
+
+.productBx{
+    width: 100%;
+    padding: 1.5em;
+}
+
+.product{
+    display: flex;
+    justify-content: space-between;
+    color: crimson;
+}
+
+
+/*=========================================*/
+/*==============CONTACT===========================*/
+/*=========================================*/
+
+#contact{
+    height: 600px;
+    background: url('../images/contact.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.call{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 150px;
+    right: 150px;
+    background-color: rgb(255, 235, 228);
+    padding: 4em 2em;
+    z-index: 2;
+    text-align: center;
+}
+
+.call p{
+    text-transform: uppercase;
+}
+
+.call h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    color: crimson;
+    text-transform: uppercase;
+}
+
+.week p, .end p{
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    padding: 1em;
+}
+
+.week span, .end span{
+    font-size: 1.5em;
+    color: crimson;
+}
+
+.week{
+    float: left;
+    width: 50%;
+}
+
+.end{
+    float: right;
+    width: 50%;
+}
+
+.contactBx{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 2em;
+    display: flex;
+}
+
+.contactBx p{
+    padding: 2em;
+}
+
+.contactBx i{
+    font-size: 1.5em;
+    margin-right: 5px;
+    color: crimson;
+}
+
+.contactBx span{
+    text-transform: uppercase;
+    color: crimson;
+    font-size: 1.2em;
+}
+
+/*=========================================*/
+/*==============FOOTER===========================*/
+/*=========================================*/
+footer{
+    background: rgb(27, 27, 27);
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+footer span{
+    color: crimson;
+}
+
+footer .social a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    margin: 2px;
+    background: crimson;
+    border-radius: 50px;
+    transition: 1s;
+}
+
+footer .social a:hover{
+    background: #fff;
+}
+
+footer .social a:hover i{
+    color: crimson;
+}
+
+footer .social a i{
+    color: #fff;
+    font-size: 1.2em;
+    padding-top: 5px;
+}
