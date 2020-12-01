@@ -1,3 +1,3 @@
 # ramen-streetFood
 
-https://kabomdev.github.io/ramen-streetFood/
+https://raw.githack.com/kabomDev/ramen-streetFood/main/index.html
