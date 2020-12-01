@@ -353,8 +353,22 @@ footer .social a i{
         display: none;
     }
 
+    #accueil{
+        height: auto;
+    }
+
+    #accueil h1{
+        font-size: 4em;
+        color: #fff;
+    }
+    
+    #accueil h2{
+        font-size: 1.5em;
+        color: #fff;
+    }
+
     .headTitle{
-        margin-top: 300px;
+        margin-top: 20%;
         transform: translateY(-50%);
     }
 
